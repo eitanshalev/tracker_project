@@ -8,7 +8,8 @@ const bluser = require('./Models/BlUser')
 const { json } = require('express');
 app.use(express.json());
 app.use(cors());
-const port = 3000; 
+process.env.PORT || 3000;
+
 
 app.use('/',User);
 
